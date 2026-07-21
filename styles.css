@@ -327,13 +327,13 @@ footer {
 
 /* Homepage-only text sizing adjustments */
 .home-hero .eyebrow {
-  font-size: 0.82rem;
-  letter-spacing: 0.16em;
+  font-size: 0.98rem;
+  letter-spacing: 0.18em;
 }
 
 .home-hero .position {
-  font-size: 0.84rem;
-  letter-spacing: 0.15em;
+  font-size: 1.00rem;
+  letter-spacing: 0.17em;
 }
 
 /* Homepage tile labels without subtitles */
