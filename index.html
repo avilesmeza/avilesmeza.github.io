@@ -2,165 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
   <meta name="description" content="Edvard Aviles-Meza — philosophy of mind, cognitive science, epistemology, and artificial intelligence.">
   <title>Edvard Aviles-Meza</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Return to top">EA</a>
-    <nav aria-label="Primary navigation">
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="about.html">About</a>
-      <a href="assets/edvard-aviles-meza-cv.pdf">CV</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero" aria-labelledby="site-title">
+  <a class="brand" href="index.html" aria-label="Return to homepage">EA</a>
+  <nav aria-label="Primary navigation">
+    <a href="research.html">Research</a> <a href="publications.html">Publications</a> <a href="teaching.html">Teaching</a> <a href="about.html">About</a> <a href="assets/edvard-aviles-meza-cv.pdf">CV</a>
+  </nav>
+</header>
+  <main>
+    <section class="home-hero">
       <p class="eyebrow">Philosophy of Mind · Cognitive Science · Artificial Intelligence</p>
-      <h1 id="site-title">Edvard Aviles-Meza</h1>
+      <h1 class="home-title">Edvard Aviles-Meza</h1>
       <p class="position">Assistant Professor of Philosophy · University of Wisconsin–Madison</p>
 
-      <figure class="collage">
-        <img src="assets/collage.jpg"
-             alt="Editorial collage combining abstract art, a cybernetic figure, meditation, formal logic, a brain, and perceptual plates.">
-      </figure>
+      <div class="portal-grid" aria-label="Website sections">
+        <a class="portal-tile tile-abstract" href="research.html">
+          <img src="assets/abstract.jpg" alt="Abstract painterly composition">
+          <span class="tile-label"><strong>Research</strong><small>Mind, representation, and intelligence</small></span>
+        </a>
 
-      <div class="intro">
-        <p>
-          I work primarily in philosophy of mind, philosophy of cognitive science,
-          and epistemology.
-        </p>
-        <p>
-          My research concerns consciousness and attention, the formats of mental
-          representation, cognitive maps, and the foundations of intelligence.
-        </p>
-      </div>
-    </section>
+        <a class="portal-tile tile-robot" href="publications.html">
+          <img src="assets/robot.jpg" alt="Detailed cybernetic figure">
+          <span class="tile-label"><strong>Publications</strong><small>Articles and work in progress</small></span>
+        </a>
 
-    <section id="research" class="section">
-      <div class="section-heading">
-        <p class="section-number">01</p>
-        <h2>Research</h2>
-      </div>
+        <a class="portal-tile tile-meditation" href="about.html">
+          <img src="assets/meditation.jpg" alt="Meditating figure">
+          <span class="tile-label"><strong>About</strong><small>Background and biography</small></span>
+        </a>
 
-      <div class="research-grid">
-        <article>
-          <p class="item-number">01.1</p>
-          <h3>Consciousness and Attention</h3>
-          <p>
-            I examine the relationship between attention and conscious experience,
-            including introspective access, perceptual overflow, and the temporal
-            structure of awareness.
-          </p>
-        </article>
+        <a class="portal-tile tile-logic" href="teaching.html">
+          <img src="assets/logic.jpg" alt="Formal logical derivation">
+          <span class="tile-label"><strong>Teaching</strong><small>Courses and materials</small></span>
+        </a>
 
-        <article>
-          <p class="item-number">01.2</p>
-          <h3>Mental Representation and Cognitive Maps</h3>
-          <p>
-            I study the formats of mental representation, with particular interest
-            in spatial representation, cognitive maps, and the explanatory role of
-            map-like neural codes.
-          </p>
-        </article>
+        <a class="portal-tile tile-network" href="projects.html">
+          <img src="assets/network.jpg" alt="Geometric network diagram">
+          <span class="tile-label"><strong>Projects</strong><small>Current research projects</small></span>
+        </a>
 
-        <article>
-          <p class="item-number">01.3</p>
-          <h3>Natural and Artificial Intelligence</h3>
-          <p>
-            My newer work investigates the foundations of a theory of intelligence
-            and the conceptual relations among natural cognition, psychometrics,
-            biological systems, and AI.
-          </p>
-        </article>
-      </div>
-    </section>
+        <a class="portal-tile tile-brain" href="assets/edvard-aviles-meza-cv.pdf">
+          <img src="assets/brain.jpg" alt="Sculptural brain">
+          <span class="tile-label"><strong>CV</strong><small>View the complete curriculum vitae</small></span>
+        </a>
 
-    <section id="publications" class="section">
-      <div class="section-heading">
-        <p class="section-number">02</p>
-        <h2>Selected Publications</h2>
-      </div>
-
-      <div class="publication-list">
-        <article class="publication">
-          <p class="year">2026</p>
-          <div>
-            <h3>“The Problem of Introspective Blink”</h3>
-            <p><em>Erkenntnis</em>.</p>
-          </div>
-        </article>
-
-        <article class="publication">
-          <p class="year">2024</p>
-          <div>
-            <h3>“The Neurotic and the Dogmatist”</h3>
-            <p><em>Synthese</em>.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="teaching" class="section">
-      <div class="section-heading">
-        <p class="section-number">03</p>
-        <h2>Teaching</h2>
-      </div>
-
-      <div class="teaching-grid">
-        <article>
-          <p class="item-number">Fall 2026</p>
-          <h3>Philosophy of Mind: Minds &amp; Machines</h3>
-          <p>
-            An advanced introduction to consciousness, mental representation,
-            externalism, artificial intelligence, and personal identity.
-          </p>
-        </article>
-
-        <article>
-          <p class="item-number">Fall 2026</p>
-          <h3>Artificial Intelligence and Data Ethics</h3>
-          <p>
-            An introduction to the philosophical and social problems raised by AI,
-            including fairness, privacy, explainability, alignment, and moral status.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="section-heading">
-        <p class="section-number">04</p>
-        <h2>About</h2>
-      </div>
-
-      <div class="about-copy">
-        <p>
-          I am an Assistant Professor of Philosophy at the University of
-          Wisconsin–Madison. My work lies primarily in philosophy of mind,
-          epistemology, and cognitive science.
-        </p>
-        <p><a class="text-link" href="about.html">Read more about me →</a></p>
+        <a class="portal-tile tile-inkblots" href="contact.html">
+          <img src="assets/inkblots.jpg" alt="Grid of symmetrical perceptual plates">
+          <span class="tile-label"><strong>Contact</strong><small>Email and academic profiles</small></span>
+        </a>
       </div>
     </section>
   </main>
-
   <footer>
-    <p>© <span id="year">2026</span> Edvard Aviles-Meza</p>
-    <p>Philosophy · Mind · Intelligence</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <p>© <span id="year">2026</span> Edvard Aviles-Meza</p>
+  <p>Philosophy · Mind · Intelligence</p>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
