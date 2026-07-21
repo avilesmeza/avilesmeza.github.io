@@ -323,3 +323,29 @@ footer {
   .about-hero { padding-top: 54px; gap: 44px; }
   footer { display: block; }
 }
+
+
+/* Homepage-only text sizing adjustments */
+.home-hero .eyebrow {
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+}
+
+.home-hero .position {
+  font-size: 0.84rem;
+  letter-spacing: 0.15em;
+}
+
+/* Homepage tile labels without subtitles */
+.home-hero .tile-label {
+  bottom: 18px;
+}
+
+.home-hero .tile-label strong {
+  font-size: clamp(1.55rem, 2.6vw, 2.45rem);
+}
+
+/* Hide subtitle area entirely on the homepage */
+.home-hero .tile-label small {
+  display: none;
+}
