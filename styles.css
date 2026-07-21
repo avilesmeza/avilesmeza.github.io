@@ -409,3 +409,23 @@ footer {
     font-size: 1.12rem;
   }
 }
+
+
+/* About portrait: show the full image without cropping */
+.about-hero {
+  align-items: start;
+}
+
+.portrait-frame {
+  min-height: 0;
+  overflow: visible;
+  aspect-ratio: auto;
+}
+
+.portrait-frame img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center top;
+}
