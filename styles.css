@@ -25,7 +25,7 @@ a { color: inherit; }
   z-index: 20;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: min(var(--max-width), calc(100% - 48px));
   margin: 0 auto;
   padding: 22px 0;
