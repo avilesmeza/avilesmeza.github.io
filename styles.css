@@ -746,3 +746,232 @@ footer {
   .ta-course-list li span { display: block; }
   .ta-course-list li span:last-child { margin-top: 7px; text-align: left; }
 }
+
+/* =========================================================
+   MOBILE V1.0 — final overrides built from the live repository
+   ========================================================= */
+@media screen and (max-width: 700px) {
+  html, body { overflow-x: hidden; }
+
+  .site-header,
+  .home-hero,
+  .inner-page,
+  .about-page,
+  footer {
+    width: calc(100% - 36px) !important;
+    max-width: none !important;
+  }
+
+  .site-header {
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 18px 0 !important;
+  }
+
+  .brand { font-size: 1.2rem; }
+
+  .home-hero {
+    padding: 46px 0 78px !important;
+  }
+
+  .home-hero .eyebrow {
+    max-width: 355px;
+    margin: 0 auto;
+    font-size: .74rem !important;
+    line-height: 1.5;
+    letter-spacing: .13em !important;
+  }
+
+  .home-title {
+    max-width: 100%;
+    margin: 18px auto 14px;
+    font-size: clamp(2.05rem, 10vw, 2.9rem) !important;
+    line-height: .9 !important;
+    letter-spacing: -.025em !important;
+    white-space: normal !important;
+    text-wrap: balance;
+  }
+
+  .home-hero .position {
+    max-width: 340px;
+    margin: 0 auto 34px !important;
+    font-size: .72rem !important;
+    line-height: 1.55;
+    letter-spacing: .13em !important;
+  }
+
+  /* Keep the homepage a real collage on phones. */
+  .portal-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(12, 58px) !important;
+    gap: 7px !important;
+  }
+
+  .portal-tile {
+    display: block !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+  }
+
+  .tile-abstract { grid-column: 1 !important; grid-row: 1 / 5 !important; }
+  .tile-robot { grid-column: 2 !important; grid-row: 1 / 7 !important; }
+  .tile-logic { grid-column: 1 !important; grid-row: 5 / 8 !important; }
+  .tile-meditation { grid-column: 1 !important; grid-row: 8 / 11 !important; }
+  .tile-network { grid-column: 1 !important; grid-row: 11 / 13 !important; }
+  .tile-inkblots { grid-column: 2 !important; grid-row: 7 / 11 !important; }
+  .tile-brain { grid-column: 2 !important; grid-row: 11 / 13 !important; }
+
+  .portal-tile::after { opacity: .5 !important; }
+  .portal-tile img { transform: none !important; }
+
+  .tile-label,
+  .home-hero .tile-label {
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 8px !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .tile-label strong,
+  .home-hero .tile-label strong {
+    font-size: clamp(1rem, 4.8vw, 1.25rem) !important;
+    line-height: 1 !important;
+  }
+
+  .tile-label small { display: none !important; }
+
+  /* Internal page headers */
+  .inner-page { padding: 50px 0 78px !important; }
+  .page-header { padding-bottom: 34px !important; }
+
+  .inner-title {
+    max-width: 100%;
+    font-size: clamp(2.8rem, 13vw, 3.8rem) !important;
+    line-height: .9 !important;
+    letter-spacing: -.035em !important;
+    overflow-wrap: break-word;
+  }
+
+  .eyebrow {
+    font-size: .78rem !important;
+    line-height: 1.4;
+    letter-spacing: .13em !important;
+  }
+
+  .left-align { margin-bottom: 18px !important; }
+  .content-section { padding: 48px 0 !important; }
+
+  /* Long-form sections */
+  .research-area,
+  .publication-entry,
+  .wip-entry,
+  .course-entry {
+    display: block !important;
+    padding: 38px 0 44px !important;
+  }
+
+  .item-number,
+  .publication-year,
+  .course-number {
+    display: block;
+    margin: 0 0 16px !important;
+  }
+
+  .research-copy h2,
+  .publication-body h2,
+  .wip-entry h2,
+  .course-copy h2 {
+    font-size: clamp(1.75rem, 8.2vw, 2.35rem) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -.02em;
+    overflow-wrap: break-word;
+  }
+
+  .research-copy p,
+  .publication-abstract,
+  .wip-entry p,
+  .course-copy > p:not(.course-subtitle):not(.course-links) {
+    font-size: 1rem !important;
+    line-height: 1.54 !important;
+  }
+
+  .section-intro,
+  .teaching-section-header {
+    display: block !important;
+  }
+
+  .availability-note,
+  .teaching-context {
+    margin-top: 12px !important;
+    text-align: left !important;
+  }
+
+  /* About */
+  .about-hero {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 46px 0 76px !important;
+  }
+
+  .portrait-frame {
+    min-height: 0 !important;
+    overflow: visible !important;
+    aspect-ratio: auto !important;
+  }
+
+  .portrait-frame img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+  }
+
+  .about-title {
+    max-width: 100%;
+    margin-bottom: 26px !important;
+    font-size: clamp(2.2rem, 9.8vw, 3rem) !important;
+    line-height: .95 !important;
+    letter-spacing: -.035em !important;
+    white-space: normal !important;
+  }
+
+  .bio {
+    font-size: 1.02rem !important;
+    line-height: 1.52 !important;
+  }
+
+  .about-actions { gap: 16px; margin-top: 28px; }
+
+  /* Contact and lists */
+  .contact-layout { grid-template-columns: 1fr !important; gap: 42px !important; }
+  .large-link, .large-copy {
+    font-size: clamp(1.45rem, 7vw, 2.15rem) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .publication { grid-template-columns: 54px 1fr !important; }
+
+  .ta-course-list li {
+    display: block !important;
+    font-size: 1.3rem !important;
+  }
+  .ta-course-list li span { display: block; }
+  .ta-course-list li span:last-child {
+    margin-top: 7px;
+    text-align: left !important;
+  }
+
+  footer { display: block !important; padding: 28px 0 42px !important; }
+  footer p { margin: 0 0 8px; }
+}
+
+@media screen and (max-width: 380px) {
+  .portal-grid { grid-template-rows: repeat(12, 52px) !important; }
+  .home-title { font-size: 1.95rem !important; }
+  .inner-title { font-size: 2.75rem !important; }
+}
