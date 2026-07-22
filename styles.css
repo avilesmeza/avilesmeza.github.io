@@ -257,9 +257,18 @@ nav a:hover, nav a:focus-visible, nav a.active {
 }
 .large-link, .large-copy {
   font-family: "Bodoni Moda", Georgia, serif;
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
   line-height: 1.15;
   text-decoration: none;
+}
+
+/* Keep the longer contact details elegant without forcing awkward wraps. */
+.large-link {
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  white-space: nowrap;
+}
+
+.large-copy {
+  font-size: clamp(1.6rem, 3vw, 2.65rem);
 }
 .large-link:hover { text-decoration: underline; text-underline-offset: 8px; }
 footer {
@@ -949,8 +958,12 @@ footer {
 
   /* Contact and lists */
   .contact-layout { grid-template-columns: 1fr !important; gap: 42px !important; }
-  .large-link, .large-copy {
-    font-size: clamp(1.45rem, 7vw, 2.15rem) !important;
+  .large-link {
+    font-size: clamp(1.35rem, 6vw, 1.75rem) !important;
+    white-space: nowrap;
+  }
+  .large-copy {
+    font-size: clamp(1.45rem, 6.5vw, 1.95rem) !important;
     overflow-wrap: anywhere;
   }
 
