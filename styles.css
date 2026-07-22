@@ -818,8 +818,8 @@ footer {
 
   .tile-abstract { grid-column: 1 !important; grid-row: 1 / 5 !important; }
   .tile-robot { grid-column: 2 !important; grid-row: 1 / 7 !important; }
-  .tile-logic { grid-column: 1 !important; grid-row: 5 / 8 !important; }
-  .tile-meditation { grid-column: 1 !important; grid-row: 8 / 11 !important; }
+  .tile-meditation { grid-column: 1 !important; grid-row: 5 / 8 !important; }
+  .tile-logic { grid-column: 1 !important; grid-row: 8 / 11 !important; }
   .tile-network { grid-column: 1 !important; grid-row: 11 / 13 !important; }
   .tile-inkblots { grid-column: 2 !important; grid-row: 7 / 11 !important; }
   .tile-brain { grid-column: 2 !important; grid-row: 11 / 13 !important; }
