@@ -151,12 +151,8 @@ nav a:hover, nav a:focus-visible, nav a.active {
 .tile-meditation { grid-column: 3; grid-row: 1 / 2; }
 .tile-inkblots { grid-column: 3; grid-row: 2 / 5; }
 
-/* Preserve the complete subjects in the collage's lower edge. */
+/* Refine the framing of the collage's lower edge. */
 .tile-network img {
-  object-position: center center;
-}
-.tile-brain img {
-  object-fit: contain;
   object-position: center center;
 }
 .tile-inkblots img {
