@@ -265,7 +265,7 @@ nav a:hover, nav a:focus-visible, nav a.active {
 }
 .contact-portrait {
   grid-column: 1 / -1;
-  width: min(100%, 980px);
+  width: min(100%, 720px);
   margin: 0;
 }
 .contact-portrait img {
