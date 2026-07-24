@@ -263,6 +263,18 @@ nav a:hover, nav a:focus-visible, nav a.active {
   grid-template-columns: 1fr 1fr;
   gap: 70px;
 }
+.contact-portrait {
+  grid-column: 1 / -1;
+  width: min(100%, 980px);
+  margin: 0;
+}
+.contact-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
 .large-link, .large-copy {
   font-family: "Bodoni Moda", Georgia, serif;
   line-height: 1.15;
@@ -966,6 +978,10 @@ footer {
 
   /* Contact and lists */
   .contact-layout { grid-template-columns: 1fr !important; gap: 42px !important; }
+  .contact-portrait {
+    grid-column: auto !important;
+    width: 100% !important;
+  }
   .large-link {
     font-size: clamp(1.35rem, 6vw, 1.75rem) !important;
     white-space: nowrap;
